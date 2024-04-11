@@ -1,0 +1,35 @@
+  
+
+.text{
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+.canvascontainer{
+    text-align: center;
+    position: relative;
+    background-color: black;
+    width: 400px;
+    // height: 500px;
+   
+}
+
+canvas{
+    border: 2px soild black;
+    // position: absolute;
+}
+
+.dragimg{
+    text-align: center;
+}
+
+.canvascol{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   // width: 400px;
+}

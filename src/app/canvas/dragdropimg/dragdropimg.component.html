@@ -1,0 +1,59 @@
+<!-- <button type="button" class="btn btn-primary">Primary</button> -->
+
+<div class="container">
+    <div class="row" >
+        <div class="col-12">
+            <div class="text">
+                Canvas Drag and Drop
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="text">
+                <p>Drag and drop image inside the box</p>
+            </div>
+        </div>
+    
+    </div>
+    <div class="row">
+        <div class="col-12 canvascol" style="text-align: center;">
+            <div id="canvasContainer" class="canvascontainer ">
+               
+                <canvas #backgroundCanvas id="backgroundLayer" width="400" customId="backgroundCanvas" height="200"></canvas>
+                <canvas #candlesCanvas id="candlesLayer" width="400" height="200" customId="layerrCanvas"></canvas>
+                
+              </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+
+        </div>
+        <div class="col-3">
+            <div class="dragimg">
+                <div class="imgtext">
+                    <p><label for="">Set me for background</label></p>
+                </div>
+                    <img id="backgroundImg" src="../assets/back.png" draggable="true" ondragstart="event.dataTransfer.setData('text', event.target.id)" width="50px" height="50px" class="bgimg" > 
+
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="dragimg">
+                <div class="imgtext">
+                    <p><label for="">Set me for background</label></p>
+                </div>
+                 <img id="candleImg" src="../assets/smile.jpg" draggable="true" ondragstart="event.dataTransfer.setData('text', event.target.id)"  width="50px" height="50px" >
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
